@@ -81,8 +81,16 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Article.cs" />
     <Compile Include="ExtendedSearchResultItem.cs">
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="layouts\LinqQueries.ascx.cs">
+      <DependentUpon>LinqQueries.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="layouts\LinqQueries.ascx.designer.cs">
+      <DependentUpon>LinqQueries.ascx</DependentUpon>
     </Compile>
     <Compile Include="layouts\QueryBuilder.ascx.cs">
       <DependentUpon>QueryBuilder.ascx</DependentUpon>
@@ -94,6 +102,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="layouts\LinqQueries.ascx" />
     <Content Include="layouts\QueryBuilder.ascx" />
   </ItemGroup>
   <PropertyGroup>
